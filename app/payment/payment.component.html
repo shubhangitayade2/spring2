@@ -1,0 +1,68 @@
+
+<div class="py-5">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <div class="card rounded-0">
+                <div class="Card-header">
+                    <h3 class="mb-0">Fill Information</h3>
+                </div>
+                <div class="card-body">
+                    <div class="form">
+                        <div class="col-md-12">
+
+
+    <table>
+      <tr>
+          <td>First Name</td>
+          <td>
+              <input [(ngModel)]="paymentModel.FirstName" type="text">
+          </td>
+      </tr>
+      <tr>
+          <td>Sur Name</td>
+          <td>
+              <input [(ngModel)]="paymentModel.SurName" type="text">
+          </td>
+      </tr>
+      <tr>
+          <td>Number of Seats Book</td>
+          <td>
+              <input [(ngModel)]="paymentModel.CardNumber" type="text">
+          </td>
+      </tr>
+      <tr>
+        <td>Details of Passenger</td>
+        <td>
+            <input [(ngModel)]="paymentModel.StreedAddress" type="text">
+        </td>
+    </tr> <tr>
+      <td>City</td>
+      <td>
+          <input [(ngModel)]="paymentModel.City" type="text">
+      </td>
+  </tr> <tr>
+    <td>ZipCode</td>
+    <td>
+        <input [(ngModel)]="paymentModel.ZipCode" type="text">
+    </td>
+</tr> <tr>
+  <td>Email</td>
+  <td>
+      <input [(ngModel)]="paymentModel.Email" type="text">
+  </td>
+</tr>
+      <input type="submit" (click)="Addpayment()">
+      <td><button routerLink="/account" class="btn btn-primary">See Booking</button></td>
+
+      
+  
+    </table>
+  <!-- {{CustomerModel.CustomerAmount}}
+  {{CustomerModel.CustomerName}}
+  {{CustomerModel.CustomerCode}} -->
+  
+</div>
+</div>
+</div>
+</div>
+</div>

@@ -1,0 +1,31 @@
+<table border="2">
+    <tr>
+        <td></td>
+        <td>First Name</td>
+        <td>Sur Name</td>
+        <td>Number of Seats Book</td>
+        
+        <td>Details of Passenger</td>
+        <td>City</td>
+        <td>ZipCode</td>
+        <td>Email</td>
+    </tr>
+    <tr *ngFor="let Payment of payments">
+        <td>
+            {{Payment.FirstName}}
+        </td>
+        <td> {{Payment.SurName}}
+        </td>
+        <td> {{Payment.CardNumber}}
+        </td>
+        <td>
+            <td> {{Payment.StreedAddress}}
+            </td>
+            <td>
+    
+
+            
+
+            </td>
+    </tr>
+</table>

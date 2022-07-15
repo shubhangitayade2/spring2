@@ -1,0 +1,70 @@
+  
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+    
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+           
+            <a class="btn btn-info" aria-current="page" routerLink="/home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" *ngIf="LoggedIn(false)" routerLink="/login">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" *ngIf="LoggedIn(false)" routerLink="/register">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" *ngIf="LoggedIn(true)" routerLink="/account">My Account</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" *ngIf="LoggedIn(true)" (click)="LogOut()">Logout</a>
+          </li>
+          
+        </ul>
+      </div>
+          </div>
+  </nav>
+  
+  <div class="container-fluid">
+    <span class="navbar-brand mb-2 h1">
+
+        <div>
+            <nav class="navbar navbar-dark bg-warning">
+        
+        
+           
+      <h1>BIO minist</h1>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <label class="form-label" for="floatingInput">Source</label>
+
+    <input type="text" id="firstname" name="source" placeholder= "Source" size="15" required /> 
+    <label class="form-label" for="floatingInput">destination</label>
+  
+    <input type="text" id="firstname" name="destination" placeholder= "destination" size="15" required />   
+
+    <form class="card-body-centre" >
+
+        <input type="text" class="form-control" [(ngModel)]="searchTerm"(keyup)="search($event)" placeholder="search ">
+    
+    
+    </form>
+</nav>
+    <!-- The form -->
+    
+  </div> 
+  
+
+
+
+  
+  <router-outlet></router-outlet>
+  
+  
+  
+ 
